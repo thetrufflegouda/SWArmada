@@ -26,7 +26,7 @@ media/screenshots and GitHub will update this page automatically.
 
 ### 1. Main menu
 
-![SWArmada main menu](media/screenshots/1menu.png)
+![SWArmada main menu with worldwide player list](media/screenshots/1menu-online.png)
 
 ### 2. Fleet builder
 

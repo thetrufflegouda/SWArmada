@@ -1,11 +1,11 @@
 {
   "name": "SWArmada",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "platform": "Windows x64",
-  "asset": "SWArmada-0.1.0-Windows-x64.zip",
-  "assetBytes": 142718102,
-  "uncompressedBytes": 419722308,
+  "asset": "SWArmada-0.1.1-Windows-x64.zip",
+  "assetBytes": 142731461,
+  "uncompressedBytes": 419751559,
   "entryCount": 220,
-  "sha256": "F9A2E9E2201B35FE8EBBEE4EB9C7CCFF6E2F8EF132EDB527710DDD006834A6A8",
+  "sha256": "1235AE580266B03EFDAADC51A7F3DB4E67209DCD4FA5DA406F4ACD20BE771306",
   "builtAt": "2026-08-01"
 }

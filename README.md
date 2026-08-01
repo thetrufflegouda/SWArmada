@@ -1,6 +1,6 @@
 # SWArmada
 
-![Version](https://img.shields.io/badge/version-0.1.0-00d9ff)
+![Version](https://img.shields.io/badge/version-0.1.1-00d9ff)
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64-6e7b8b)
 ![Status](https://img.shields.io/badge/status-early%20development-f08b32)
 
@@ -79,16 +79,29 @@ media/screenshots and GitHub will update this page automatically.
   libraries
 - Saved fleet archives and a fleet sandbox for testing compositions
 - Local hotseat play and experimental online multiplayer support
+- An opt-in worldwide player list with locally persistent `Username#NNNN`
+  handles and direct match invitations
 - Custom battlefield and map-editing tools
 - Laser fire, combat effects, spatial sound, and event-driven UI audio
 - A global scanline/CRT presentation inspired by retro tactical displays
 
+## What's new in 0.1.1
+
+- See opted-in players online worldwide from the main menu
+- Pick a username while receiving a stable, automatic `#NNNN` identifier
+- Invite an available player directly into a private Relay-backed match lobby
+- Keep the same anonymous identity and handle when updating the game
+- Receive an in-game notification linking to GitHub when a newer release is
+  available
+
+Manual host and join codes continue to work as before.
+
 ## Download and install
 
-The first public baseline is **SWArmada 0.1.0** for **Windows x64**.
+The current public build is **SWArmada 0.1.1** for **Windows x64**.
 
-1. Open the [`v0.1.0` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.0).
-2. Download `SWArmada-0.1.0-Windows-x64.zip`.
+1. Open the [`v0.1.1` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.1).
+2. Download `SWArmada-0.1.1-Windows-x64.zip`.
 3. Extract the entire ZIP to a writable folder.
 4. Run `SWArmada.exe`.
 
@@ -101,13 +114,13 @@ not code-signed.
 SHA-256:
 
 ```text
-F9A2E9E2201B35FE8EBBEE4EB9C7CCFF6E2F8EF132EDB527710DDD006834A6A8
+1235AE580266B03EFDAADC51A7F3DB4E67209DCD4FA5DA406F4ACD20BE771306
 ```
 
 In PowerShell, compare it with:
 
 ```powershell
-Get-FileHash .\SWArmada-0.1.0-Windows-x64.zip -Algorithm SHA256
+Get-FileHash .\SWArmada-0.1.1-Windows-x64.zip -Algorithm SHA256
 ```
 
 ## How it plays
@@ -125,10 +138,11 @@ tracking, and online synchronization.
 
 ## Project status
 
-Version `0.1.0` is the project's first public baseline. It is an early build,
-not a finished commercial release. Features, rules behavior, balance,
-presentation, saved data, and multiplayer compatibility may change as the game
-develops. Bugs and incomplete content should be expected.
+Version `0.1.1` adds worldwide player presence, direct invitations, and update
+notifications to the `0.1.0` public baseline. It is an early build, not a
+finished commercial release. Features, rules behavior, balance, presentation,
+saved data, and multiplayer compatibility may change as the game develops.
+Bugs and incomplete content should be expected.
 
 This repository is the public release home for SWArmada. It contains project
 information and release metadata; downloadable Windows builds are attached to

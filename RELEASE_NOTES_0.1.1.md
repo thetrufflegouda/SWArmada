@@ -33,9 +33,17 @@ online match.
 
 ## Download
 
+### Windows x64
+
 Download `SWArmada-0.1.1-Windows-x64.zip`, extract the entire archive, and run
 `SWArmada.exe`.
 
-SHA-256:
-
 `1235AE580266B03EFDAADC51A7F3DB4E67209DCD4FA5DA406F4ACD20BE771306`
+
+### Linux x86-64
+
+Download `SWArmada-0.1.1-Linux-x86_64.tar.gz`, extract the entire archive, and
+run `./SWArmada.x86_64`. If needed, restore the executable permission with
+`chmod +x SWArmada.x86_64`.
+
+`CE63BA7203B117E72033D9555E6CCEB4B303F56F78560AB67D4A4DAC085AC5AC`

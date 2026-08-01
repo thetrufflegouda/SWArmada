@@ -1,7 +1,7 @@
 # SWArmada
 
 ![Version](https://img.shields.io/badge/version-0.1.1-00d9ff)
-![Platform](https://img.shields.io/badge/platform-Windows%20x64-6e7b8b)
+![Platform](https://img.shields.io/badge/platform-Windows%20x64%20%7C%20Linux%20x86__64-6e7b8b)
 ![Status](https://img.shields.io/badge/status-early%20development-f08b32)
 
 **An unofficial digital adaptation of the *Star Wars: Armada* tabletop game.**
@@ -98,29 +98,50 @@ Manual host and join codes continue to work as before.
 
 ## Download and install
 
-The current public build is **SWArmada 0.1.1** for **Windows x64**.
+The current public build is **SWArmada 0.1.1** for **Windows x64** and
+**Linux x86-64**.
 
 1. Open the [`v0.1.1` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.1).
-2. Download `SWArmada-0.1.1-Windows-x64.zip`.
-3. Extract the entire ZIP to a writable folder.
-4. Run `SWArmada.exe`.
+2. Download the archive for your platform.
+
+### Windows x64
+
+1. Download `SWArmada-0.1.1-Windows-x64.zip`.
+2. Extract the entire ZIP to a writable folder.
+3. Run `SWArmada.exe`.
 
 Keep `SWArmada.exe` beside `SWArmada_Data`, `UnityPlayer.dll`, and the other
 packaged files. Windows may show a security prompt because this early build is
 not code-signed.
 
+### Linux x86-64
+
+1. Download `SWArmada-0.1.1-Linux-x86_64.tar.gz`.
+2. Extract the entire archive.
+3. Run `./SWArmada.x86_64` from the extracted folder.
+
+The executable permission is stored in the archive. If your extraction tool
+does not preserve it, run `chmod +x SWArmada.x86_64` first.
+
 ### Verify the download
 
-SHA-256:
+SHA-256 checksums:
 
 ```text
-1235AE580266B03EFDAADC51A7F3DB4E67209DCD4FA5DA406F4ACD20BE771306
+1235AE580266B03EFDAADC51A7F3DB4E67209DCD4FA5DA406F4ACD20BE771306  SWArmada-0.1.1-Windows-x64.zip
+CE63BA7203B117E72033D9555E6CCEB4B303F56F78560AB67D4A4DAC085AC5AC  SWArmada-0.1.1-Linux-x86_64.tar.gz
 ```
 
 In PowerShell, compare it with:
 
 ```powershell
 Get-FileHash .\SWArmada-0.1.1-Windows-x64.zip -Algorithm SHA256
+```
+
+On Linux, compare it with:
+
+```bash
+sha256sum SWArmada-0.1.1-Linux-x86_64.tar.gz
 ```
 
 ## How it plays
@@ -145,8 +166,8 @@ saved data, and multiplayer compatibility may change as the game develops.
 Bugs and incomplete content should be expected.
 
 This repository is the public release home for SWArmada. It contains project
-information and release metadata; downloadable Windows builds are attached to
-GitHub Releases.
+information and release metadata; downloadable Windows and Linux builds are
+attached to GitHub Releases.
 
 ## Feedback and bug reports
 

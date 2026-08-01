@@ -1,0 +1,6 @@
+# Release artifacts are uploaded through GitHub Releases, not committed.
+/dist/*
+
+# Windows-generated files
+Thumbs.db
+Desktop.ini

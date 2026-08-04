@@ -1,23 +1,23 @@
 {
   "name": "SWArmada",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "assets": [
     {
       "platform": "Windows x64",
-      "asset": "SWArmada-0.1.1-Windows-x64.zip",
-      "assetBytes": 142731461,
-      "uncompressedBytes": 419751559,
-      "entryCount": 220,
-      "sha256": "1235AE580266B03EFDAADC51A7F3DB4E67209DCD4FA5DA406F4ACD20BE771306"
+      "asset": "SWArmada-0.1.2-Windows-x64.zip",
+      "assetBytes": 154447227,
+      "uncompressedBytes": 451642529,
+      "entryCount": 221,
+      "sha256": "605303C2D28A4C5A5A768D7E546BD503DD494B9FE9120AA6B6D3B472028DB782"
     },
     {
       "platform": "Linux x86-64",
-      "asset": "SWArmada-0.1.1-Linux-x86_64.tar.gz",
-      "assetBytes": 139984532,
-      "uncompressedBytes": 417584398,
-      "entryCount": 231,
-      "sha256": "CE63BA7203B117E72033D9555E6CCEB4B303F56F78560AB67D4A4DAC085AC5AC"
+      "asset": "SWArmada-0.1.2-Linux-x86_64.tar.gz",
+      "assetBytes": 152974549,
+      "uncompressedBytes": 449483548,
+      "entryCount": 232,
+      "sha256": "8014EB09A9246C709185BD494137BD1C1B625D0E67CC71F469F4F73A31F34E37"
     }
   ],
-  "builtAt": "2026-08-01"
+  "builtAt": "2026-08-03"
 }

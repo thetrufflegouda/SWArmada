@@ -1,6 +1,6 @@
 # SWArmada
 
-![Version](https://img.shields.io/badge/version-0.1.1-00d9ff)
+![Version](https://img.shields.io/badge/version-0.1.2-00d9ff)
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64%20%7C%20Linux%20x86__64-6e7b8b)
 ![Status](https://img.shields.io/badge/status-early%20development-f08b32)
 
@@ -17,12 +17,6 @@ interface.
 [Credits](#credits-and-acknowledgements)
 
 ## Screenshots
-
-<!--
-Screenshots are intentionally ordered by filename: 1-9, then 91 and 92.
-To replace one later, upload a new PNG with the same filename under
-media/screenshots and GitHub will update this page automatically.
--->
 
 ### 1. Main menu
 
@@ -68,6 +62,22 @@ media/screenshots and GitHub will update this page automatically.
 
 ![Plotting a capital ship movement path](media/screenshots/92plot-movement.png)
 
+### 12. Intel Retrieval
+
+![A light ship choosing whether to begin downloading an Intel token](media/screenshots/10intel-retrieval.png)
+
+### 13. Seize the Station
+
+![An online Seize the Station objective battle](media/screenshots/11seize-the-station.png)
+
+### 14. Escort the VIP
+
+![A Gozanti VIP Command Transport en route to extraction](media/screenshots/12escort-the-vip.png)
+
+### 15. Online lobby
+
+![An Escort the VIP online lobby with fleets, roles, objective card, and chat](media/screenshots/13online-lobby.png)
+
 ## Features
 
 - A fully 3D tactical battlespace for capital ships and squadrons
@@ -75,38 +85,43 @@ media/screenshots and GitHub will update this page automatically.
   range bands
 - Attack dice, accuracy results, shields, hull damage, and defense tokens
 - Command dials, ship activation, squadron activation, and round-based play
-- Fleet creation and editing with ship, squadron, upgrade, and objective
-  libraries
+- Fleet creation and editing with ship, squadron, and upgrade libraries, plus
+  text-list importing from Ryan Kingston and Star Forge formats
 - Saved fleet archives and a fleet sandbox for testing compositions
-- Local hotseat play and experimental online multiplayer support
+- Local hotseat play and experimental online multiplayer support with Default,
+  Escort the VIP, Seize the Station, and Intel Retrieval scenarios
 - An opt-in worldwide player list with locally persistent `Username#NNNN`
-  handles and direct match invitations
+  handles, direct match invitations, and persistent direct comms
 - Custom battlefield and map-editing tools
 - Laser fire, combat effects, spatial sound, and event-driven UI audio
 - A global scanline/CRT presentation inspired by retro tactical displays
 
-## What's new in 0.1.1
+## What's new in 0.1.2
 
-- See opted-in players online worldwide from the main menu
-- Pick a username while receiving a stable, automatic `#NNNN` identifier
-- Invite an available player directly into a private Relay-backed match lobby
-- Keep the same anonymous identity and handle when updating the game
-- Receive an in-game notification linking to GitHub when a newer release is
-  available
+- Three playable objective modes: Escort the VIP, Seize the Station, and Intel
+  Retrieval
+- Scenario-aware custom maps, Fleet Sandbox, local setup, and online lobbies
+- Fleet-text importing with catalog-based validation and point recalculation
+- Official/Custom fleet rules across Fleet Builder and match setup
+- Persistent direct comms, stronger presence expiry, and more reliable invites
+- Automatic verified update downloads for Windows and Linux
+- Tabletop ruler-correct squadron movement, ship-overlap handling, speed-0 yaw,
+  huge-base range fixes, and extensive combat/UI corrections
 
-Manual host and join codes continue to work as before.
+See [the complete 0.1.2 release notes](RELEASE_NOTES_0.1.2.md) for the full
+breakdown.
 
 ## Download and install
 
-The current public build is **SWArmada 0.1.1** for **Windows x64** and
+The current public build is **SWArmada 0.1.2** for **Windows x64** and
 **Linux x86-64**.
 
-1. Open the [`v0.1.1` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.1).
+1. Open the [`v0.1.2` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.2).
 2. Download the archive for your platform.
 
 ### Windows x64
 
-1. Download `SWArmada-0.1.1-Windows-x64.zip`.
+1. Download `SWArmada-0.1.2-Windows-x64.zip`.
 2. Extract the entire ZIP to a writable folder.
 3. Run `SWArmada.exe`.
 
@@ -116,7 +131,7 @@ not code-signed.
 
 ### Linux x86-64
 
-1. Download `SWArmada-0.1.1-Linux-x86_64.tar.gz`.
+1. Download `SWArmada-0.1.2-Linux-x86_64.tar.gz`.
 2. Extract the entire archive.
 3. Run `./SWArmada.x86_64` from the extracted folder.
 
@@ -128,20 +143,20 @@ does not preserve it, run `chmod +x SWArmada.x86_64` first.
 SHA-256 checksums:
 
 ```text
-1235AE580266B03EFDAADC51A7F3DB4E67209DCD4FA5DA406F4ACD20BE771306  SWArmada-0.1.1-Windows-x64.zip
-CE63BA7203B117E72033D9555E6CCEB4B303F56F78560AB67D4A4DAC085AC5AC  SWArmada-0.1.1-Linux-x86_64.tar.gz
+605303C2D28A4C5A5A768D7E546BD503DD494B9FE9120AA6B6D3B472028DB782  SWArmada-0.1.2-Windows-x64.zip
+8014EB09A9246C709185BD494137BD1C1B625D0E67CC71F469F4F73A31F34E37  SWArmada-0.1.2-Linux-x86_64.tar.gz
 ```
 
 In PowerShell, compare it with:
 
 ```powershell
-Get-FileHash .\SWArmada-0.1.1-Windows-x64.zip -Algorithm SHA256
+Get-FileHash .\SWArmada-0.1.2-Windows-x64.zip -Algorithm SHA256
 ```
 
 On Linux, compare it with:
 
 ```bash
-sha256sum SWArmada-0.1.1-Linux-x86_64.tar.gz
+sha256sum SWArmada-0.1.2-Linux-x86_64.tar.gz
 ```
 
 ## How it plays
@@ -159,11 +174,12 @@ tracking, and online synchronization.
 
 ## Project status
 
-Version `0.1.1` adds worldwide player presence, direct invitations, and update
-notifications to the `0.1.0` public baseline. It is an early build, not a
-finished commercial release. Features, rules behavior, balance, presentation,
-saved data, and multiplayer compatibility may change as the game develops.
-Bugs and incomplete content should be expected.
+Version `0.1.2` adds objective modes, scenario-aware setup, importing, direct
+comms, verified update downloads, and a substantial tabletop-rules and UI pass
+to the public baseline. It is an early build, not a finished commercial
+release. Features, rules behavior, balance, presentation, saved data, and
+multiplayer compatibility may change as the game develops. Bugs and incomplete
+content should be expected.
 
 This repository is the public release home for SWArmada. It contains project
 information and release metadata; downloadable Windows and Linux builds are

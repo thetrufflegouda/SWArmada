@@ -1,7 +1,7 @@
 # SWArmada
 
-![Version](https://img.shields.io/badge/version-0.1.2-00d9ff)
-![Platform](https://img.shields.io/badge/platform-Windows%20x64%20%7C%20Linux%20x86__64-6e7b8b)
+![Version](https://img.shields.io/badge/version-0.1.3-00d9ff)
+![Platform](https://img.shields.io/badge/platform-Windows%20x64%20%7C%20Linux%20x86__64%20%7C%20macOS%20Universal-6e7b8b)
 ![Status](https://img.shields.io/badge/status-early%20development-f08b32)
 
 **An unofficial digital adaptation of the *Star Wars: Armada* tabletop game.**
@@ -96,32 +96,27 @@ interface.
 - Laser fire, combat effects, spatial sound, and event-driven UI audio
 - A global scanline/CRT presentation inspired by retro tactical displays
 
-## What's new in 0.1.2
+## What's new in 0.1.3
 
-- Three playable objective modes: Escort the VIP, Seize the Station, and Intel
-  Retrieval
-- Scenario-aware custom maps, Fleet Sandbox, local setup, and online lobbies
-- Fleet-text importing with catalog-based validation and point recalculation
-- Official/Custom fleet rules across Fleet Builder and match setup
-- Persistent direct comms, stronger presence expiry, and more reliable invites
-- Automatic verified update downloads for Windows and Linux
-- Tabletop ruler-correct squadron movement, ship-overlap handling, speed-0 yaw,
-  huge-base range fixes, and extensive combat/UI corrections
+- Fixed the second queued squadron becoming unplaceable when one ship displaces
+  multiple squadrons
+- Fleet Archives now returns to Fleet Management instead of the main menu
+- Added the first macOS build as a Universal Intel and Apple Silicon app
+- Added verified macOS archive support to the automatic updater
 
-See [the complete 0.1.2 release notes](RELEASE_NOTES_0.1.2.md) for the full
-breakdown.
+See [the complete 0.1.3 release notes](RELEASE_NOTES_0.1.3.md).
 
 ## Download and install
 
-The current public build is **SWArmada 0.1.2** for **Windows x64** and
-**Linux x86-64**.
+The current public build is **SWArmada 0.1.3** for **Windows x64**,
+**Linux x86-64**, and **macOS Universal**.
 
-1. Open the [`v0.1.2` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.2).
+1. Open the [`v0.1.3` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.3).
 2. Download the archive for your platform.
 
 ### Windows x64
 
-1. Download `SWArmada-0.1.2-Windows-x64.zip`.
+1. Download `SWArmada-0.1.3-Windows-x64.zip`.
 2. Extract the entire ZIP to a writable folder.
 3. Run `SWArmada.exe`.
 
@@ -131,32 +126,43 @@ not code-signed.
 
 ### Linux x86-64
 
-1. Download `SWArmada-0.1.2-Linux-x86_64.tar.gz`.
+1. Download `SWArmada-0.1.3-Linux-x86_64.tar.gz`.
 2. Extract the entire archive.
 3. Run `./SWArmada.x86_64` from the extracted folder.
 
 The executable permission is stored in the archive. If your extraction tool
 does not preserve it, run `chmod +x SWArmada.x86_64` first.
 
+### macOS Universal
+
+1. Download `SWArmada-0.1.3-macOS.tar.gz`.
+2. Extract the entire archive.
+3. Open `SWArmada.app`.
+
+The app supports both Intel and Apple Silicon Macs. This early build is not
+Apple-notarized, so macOS may require you to right-click the app and select
+Open, or approve it under Privacy & Security, on first launch.
+
 ### Verify the download
 
 SHA-256 checksums:
 
 ```text
-605303C2D28A4C5A5A768D7E546BD503DD494B9FE9120AA6B6D3B472028DB782  SWArmada-0.1.2-Windows-x64.zip
-8014EB09A9246C709185BD494137BD1C1B625D0E67CC71F469F4F73A31F34E37  SWArmada-0.1.2-Linux-x86_64.tar.gz
+20FFC8EE734ABBB775C98BACA52DC5ED2475094304378FE63EC8CC722AB304A7  SWArmada-0.1.3-Windows-x64.zip
+F528BB31B5218E4CE3A8597E27404C846D7B89DCD12AFA29D3032B5E5CE05EB7  SWArmada-0.1.3-Linux-x86_64.tar.gz
+97B99F65BD09A89481746D3A61EBA0EE17CD631205C1956D6054031C65D2E549  SWArmada-0.1.3-macOS.tar.gz
 ```
 
 In PowerShell, compare it with:
 
 ```powershell
-Get-FileHash .\SWArmada-0.1.2-Windows-x64.zip -Algorithm SHA256
+Get-FileHash .\SWArmada-0.1.3-Windows-x64.zip -Algorithm SHA256
 ```
 
 On Linux, compare it with:
 
 ```bash
-sha256sum SWArmada-0.1.2-Linux-x86_64.tar.gz
+sha256sum SWArmada-0.1.3-Linux-x86_64.tar.gz
 ```
 
 ## How it plays
@@ -174,16 +180,16 @@ tracking, and online synchronization.
 
 ## Project status
 
-Version `0.1.2` adds objective modes, scenario-aware setup, importing, direct
-comms, verified update downloads, and a substantial tabletop-rules and UI pass
-to the public baseline. It is an early build, not a finished commercial
-release. Features, rules behavior, balance, presentation, saved data, and
-multiplayer compatibility may change as the game develops. Bugs and incomplete
-content should be expected.
+Version `0.1.3` is a maintenance release for the 0.1.2 objective-gameplay
+baseline, with two targeted workflow fixes and the first Universal macOS
+package. It is an early build, not a finished commercial release. Features,
+rules behavior, balance, presentation, saved data, and multiplayer
+compatibility may change as the game develops. Bugs and incomplete content
+should be expected.
 
 This repository is the public release home for SWArmada. It contains project
-information and release metadata; downloadable Windows and Linux builds are
-attached to GitHub Releases.
+information and release metadata; downloadable Windows, Linux, and macOS
+builds are attached to GitHub Releases.
 
 ## Feedback and bug reports
 

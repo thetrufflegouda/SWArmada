@@ -1,6 +1,6 @@
 # SWArmada
 
-![Version](https://img.shields.io/badge/version-0.1.4-00d9ff)
+![Version](https://img.shields.io/badge/version-0.1.5-00d9ff)
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64%20%7C%20Linux%20x86__64%20%7C%20macOS%20Universal-6e7b8b)
 ![Status](https://img.shields.io/badge/status-early%20development-f08b32)
 
@@ -96,25 +96,29 @@ interface.
 - Laser fire, combat effects, spatial sound, and event-driven UI audio
 - A global scanline/CRT presentation inspired by retro tactical displays
 
-## What's new in 0.1.4
+## What's new in 0.1.5
 
-- Fixed multiplayer capital-ship squadron displacement so confirming a legal
-  placement no longer freezes turn progression when the authoritative command
-  is replayed
+- Fixed multiplayer startup for custom fleets containing huge ships such as
+  the Executor-class Star Dreadnought
+- Corrected Standard Front, capital-ship, squadron, and Grav Well deployment
+  measurements
+- Improved direct messages with a 500-character scrolling composer, wrapped
+  transcripts, single-click access, and latest-unread conversation routing
+- Moved already-activated ship rings back below ship models
 
-See [the complete 0.1.4 release notes](RELEASE_NOTES_0.1.4.md).
+See [the complete 0.1.5 release notes](RELEASE_NOTES_0.1.5.md).
 
 ## Download and install
 
-The current public build is **SWArmada 0.1.4** for **Windows x64**,
+The current public build is **SWArmada 0.1.5** for **Windows x64**,
 **Linux x86-64**, and **macOS Universal**.
 
-1. Open the [`v0.1.4` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.4).
+1. Open the [`v0.1.5` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.5).
 2. Download the archive for your platform.
 
 ### Windows x64
 
-1. Download `SWArmada-0.1.4-Windows-x64.zip`.
+1. Download `SWArmada-0.1.5-Windows-x64.zip`.
 2. Extract the entire ZIP to a writable folder.
 3. Run `SWArmada.exe`.
 
@@ -124,7 +128,7 @@ not code-signed.
 
 ### Linux x86-64
 
-1. Download `SWArmada-0.1.4-Linux-x86_64.tar.gz`.
+1. Download `SWArmada-0.1.5-Linux-x86_64.tar.gz`.
 2. Extract the entire archive.
 3. Run `./SWArmada.x86_64` from the extracted folder.
 
@@ -133,7 +137,7 @@ does not preserve it, run `chmod +x SWArmada.x86_64` first.
 
 ### macOS Universal
 
-1. Download `SWArmada-0.1.4-macOS.tar.gz`.
+1. Download `SWArmada-0.1.5-macOS.tar.gz`.
 2. Extract the entire archive.
 3. Open `SWArmada.app`.
 
@@ -146,21 +150,21 @@ Open, or approve it under Privacy & Security, on first launch.
 SHA-256 checksums:
 
 ```text
-DFE0CF6D833CCEE67D18075BE0E18D1502DE85FB907C288D73460ECEDD8E05F5  SWArmada-0.1.4-Windows-x64.zip
-60116EF09CAB44E474C6702AFFAAE027C531CE9E8E8B1A3B22F14525A8685CB8  SWArmada-0.1.4-Linux-x86_64.tar.gz
-54569808A8A1B58D711D052B88811033CE8291AB8A948A21117BA472328A2C5C  SWArmada-0.1.4-macOS.tar.gz
+0621817A133B775A0819F313CC7A815D170D705D03E6456FF9748CC272CF807A  SWArmada-0.1.5-Windows-x64.zip
+0347E28B8F52831156750235142A84282A7F8865AC89D65F9D1F3E431415B9A5  SWArmada-0.1.5-Linux-x86_64.tar.gz
+FF0ABEB27F78CD05E852142375F372A5D3255B58ED0D1A47023910F360C388CA  SWArmada-0.1.5-macOS.tar.gz
 ```
 
 In PowerShell, compare it with:
 
 ```powershell
-Get-FileHash .\SWArmada-0.1.4-Windows-x64.zip -Algorithm SHA256
+Get-FileHash .\SWArmada-0.1.5-Windows-x64.zip -Algorithm SHA256
 ```
 
 On Linux, compare it with:
 
 ```bash
-sha256sum SWArmada-0.1.4-Linux-x86_64.tar.gz
+sha256sum SWArmada-0.1.5-Linux-x86_64.tar.gz
 ```
 
 ## How it plays
@@ -178,7 +182,7 @@ tracking, and online synchronization.
 
 ## Project status
 
-Version `0.1.4` is a focused multiplayer hotfix for the 0.1.3 maintenance
+Version `0.1.5` is a multiplayer, deployment, and messaging maintenance
 release. It is an early build, not a finished commercial release. Features,
 rules behavior, balance, presentation, saved data, and multiplayer
 compatibility may change as the game develops. Bugs and incomplete content

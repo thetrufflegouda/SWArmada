@@ -1,31 +1,31 @@
 {
   "name": "SWArmada",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "assets": [
     {
       "platform": "Windows x64",
-      "asset": "SWArmada-0.1.4-Windows-x64.zip",
-      "assetBytes": 154448020,
-      "uncompressedBytes": 451644993,
+      "asset": "SWArmada-0.1.5-Windows-x64.zip",
+      "assetBytes": 154448768,
+      "uncompressedBytes": 451646017,
       "entryCount": 221,
-      "sha256": "DFE0CF6D833CCEE67D18075BE0E18D1502DE85FB907C288D73460ECEDD8E05F5"
+      "sha256": "0621817A133B775A0819F313CC7A815D170D705D03E6456FF9748CC272CF807A"
     },
     {
       "platform": "Linux x86-64",
-      "asset": "SWArmada-0.1.4-Linux-x86_64.tar.gz",
-      "assetBytes": 152973074,
-      "uncompressedBytes": 449486012,
+      "asset": "SWArmada-0.1.5-Linux-x86_64.tar.gz",
+      "assetBytes": 152974836,
+      "uncompressedBytes": 449487036,
       "entryCount": 233,
-      "sha256": "60116EF09CAB44E474C6702AFFAAE027C531CE9E8E8B1A3B22F14525A8685CB8"
+      "sha256": "0347E28B8F52831156750235142A84282A7F8865AC89D65F9D1F3E431415B9A5"
     },
     {
       "platform": "macOS Universal",
-      "asset": "SWArmada-0.1.4-macOS.tar.gz",
-      "assetBytes": 163674983,
-      "uncompressedBytes": 468913978,
+      "asset": "SWArmada-0.1.5-macOS.tar.gz",
+      "assetBytes": 163681725,
+      "uncompressedBytes": 468915002,
       "entryCount": 245,
-      "sha256": "54569808A8A1B58D711D052B88811033CE8291AB8A948A21117BA472328A2C5C"
+      "sha256": "FF0ABEB27F78CD05E852142375F372A5D3255B58ED0D1A47023910F360C388CA"
     }
   ],
-  "builtAt": "2026-08-05"
+  "builtAt": "2026-08-06"
 }

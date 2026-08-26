@@ -1,31 +1,39 @@
 {
   "name": "SWArmada",
-  "version": "0.1.5",
+  "version": "0.2.1",
   "assets": [
     {
       "platform": "Windows x64",
-      "asset": "SWArmada-0.1.5-Windows-x64.zip",
-      "assetBytes": 154448768,
-      "uncompressedBytes": 451646017,
-      "entryCount": 221,
-      "sha256": "0621817A133B775A0819F313CC7A815D170D705D03E6456FF9748CC272CF807A"
+      "asset": "SWArmada-0.2.1-Windows-x64.zip",
+      "assetBytes": 176265804,
+      "uncompressedBytes": 485913980,
+      "entryCount": 222,
+      "sha256": "7FF03159560E615267FD3D042CE71AB379A583A71EF39132527A4D33E3995FB5"
     },
     {
       "platform": "Linux x86-64",
-      "asset": "SWArmada-0.1.5-Linux-x86_64.tar.gz",
-      "assetBytes": 152974836,
-      "uncompressedBytes": 449487036,
-      "entryCount": 233,
-      "sha256": "0347E28B8F52831156750235142A84282A7F8865AC89D65F9D1F3E431415B9A5"
+      "asset": "SWArmada-0.2.1-Linux-x86_64.tar.gz",
+      "assetBytes": 171009468,
+      "uncompressedBytes": 483753543,
+      "entryCount": 231,
+      "sha256": "EC68B2CDA404F2E759286A5C266E8BD370198CA3BBD038F14AFB6828C37B6AA2"
     },
     {
       "platform": "macOS Universal",
-      "asset": "SWArmada-0.1.5-macOS.tar.gz",
-      "assetBytes": 163681725,
-      "uncompressedBytes": 468915002,
-      "entryCount": 245,
-      "sha256": "FF0ABEB27F78CD05E852142375F372A5D3255B58ED0D1A47023910F360C388CA"
+      "asset": "SWArmada-0.2.1-macOS.tar.gz",
+      "assetBytes": 181717175,
+      "uncompressedBytes": 503182193,
+      "entryCount": 243,
+      "sha256": "DCC134C13C1FA6D15DC68341C750F60D8F3F931595A61398766AC009BA96E080"
+    },
+    {
+      "platform": "Android ARM64",
+      "asset": "SWArmada-0.2.1-Android-arm64.apk",
+      "assetBytes": 190208440,
+      "uncompressedBytes": 468442506,
+      "entryCount": 1678,
+      "sha256": "31228DDCFB56A6D8977B2F9313D9C567A7F9298F042180FFBE4F88A0AD93D369"
     }
   ],
-  "builtAt": "2026-08-06"
+  "builtAt": "2026-08-26"
 }

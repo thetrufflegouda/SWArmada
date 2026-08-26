@@ -1,6 +1,6 @@
 # SWArmada
 
-![Version](https://img.shields.io/badge/version-0.1.6-00d9ff)
+![Version](https://img.shields.io/badge/version-0.2.1-00d9ff)
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64%20%7C%20Linux%20x86__64%20%7C%20macOS%20Universal%20%7C%20Android%20ARM64-6e7b8b)
 ![Status](https://img.shields.io/badge/status-early%20development-f08b32)
 
@@ -13,7 +13,8 @@ objectives into a playable digital format wrapped in a retro tactical CRT
 interface.
 
 [Download](#download-and-install) · [Features](#features) ·
-[Screenshots](#screenshots) · [Project status](#project-status) ·
+[Screenshots](#screenshots) · [Changelog](CHANGELOG.md) ·
+[Project status](#project-status) ·
 [Credits](#credits-and-acknowledgements)
 
 ## Screenshots
@@ -87,7 +88,11 @@ interface.
 - Command dials, ship activation, squadron activation, and round-based play
 - Fleet creation and editing with ship, squadron, and upgrade libraries, plus
   text-list importing from Ryan Kingston and Star Forge formats
+- Rebel Alliance, Galactic Empire, Galactic Republic, and Separatist Alliance
+  fleet content
 - Saved fleet archives and a fleet sandbox for testing compositions
+- Single-player battles against the AI, with configurable AI fleets and
+  factions
 - Local hotseat play and experimental online multiplayer support with Default,
   Escort the VIP, Seize the Station, and Intel Retrieval scenarios
 - An opt-in worldwide player list with locally persistent `Username#NNNN`
@@ -96,32 +101,30 @@ interface.
 - Laser fire, combat effects, spatial sound, and event-driven UI audio
 - A global scanline/CRT presentation inspired by retro tactical displays
 
-## What's new in 0.1.6
+## What's new in 0.2.1
 
-- Added the first Android ARM64 build with native landscape resolution,
-  touch camera controls, inertial scrolling, and touch-first battle input
-- Added complete Onager ignition attacks, targeting tokens, Extreme range,
-  Cataclysm timing, and official Onager upgrade interactions
-- Stabilized firing-arc, hull-zone, maneuver, squadron, controller, lobby,
-  messaging, and online command input across every platform
-- Added exact defense-token handling for NK-7, Intel Officer, Redirect, and
-  duplicate-token effects, plus numerous rules and presentation corrections
-- Reworked controller support, the virtual keyboard, contextual ship bases,
-  combat cameras, squadron attack runs, and the shared Controls reference
+- Custom fleet limits now work correctly when equipping upgrades above 400
+  total points
+- The upgrade picker honors the selected Custom point limit while continuing
+  to enforce upgrade slots, faction restrictions, uniqueness, and card rules
+- Official Standard remains fixed at 400 fleet points and 134 squadron points
+- Fleet budgets use the actual combined cost of ships, upgrades, and
+  squadrons; squadron points are not reserved
 
-See [the complete 0.1.6 release notes](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.6).
+See [the complete 0.2.1 release notes](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.1)
+or browse the full [changelog](CHANGELOG.md).
 
 ## Download and install
 
-The current public build is **SWArmada 0.1.6** for **Windows x64**,
+The current public build is **SWArmada 0.2.1** for **Windows x64**,
 **Linux x86-64**, **macOS Universal**, and **Android ARM64**.
 
-1. Open the [`v0.1.6` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.1.6).
+1. Open the [`v0.2.1` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.1).
 2. Download the archive for your platform.
 
 ### Windows x64
 
-1. Download `SWArmada-0.1.6-Windows-x64.zip`.
+1. Download `SWArmada-0.2.1-Windows-x64.zip`.
 2. Extract the entire ZIP to a writable folder.
 3. Run `SWArmada.exe`.
 
@@ -131,7 +134,7 @@ not code-signed.
 
 ### Linux x86-64
 
-1. Download `SWArmada-0.1.6-Linux-x86_64.tar.gz`.
+1. Download `SWArmada-0.2.1-Linux-x86_64.tar.gz`.
 2. Extract the entire archive.
 3. Run `./SWArmada.x86_64` from the extracted folder.
 
@@ -140,7 +143,7 @@ does not preserve it, run `chmod +x SWArmada.x86_64` first.
 
 ### macOS Universal
 
-1. Download `SWArmada-0.1.6-macOS.tar.gz`.
+1. Download `SWArmada-0.2.1-macOS.tar.gz`.
 2. Extract the entire archive.
 3. Open `SWArmada.app`.
 
@@ -150,7 +153,7 @@ Open, or approve it under Privacy & Security, on first launch.
 
 ### Android ARM64
 
-1. Download `SWArmada-0.1.6-Android-arm64.apk` on an ARM64 device running
+1. Download `SWArmada-0.2.1-Android-arm64.apk` on an ARM64 device running
    Android 8.0 / API 26 or newer.
 2. Allow your browser or file manager to install unknown apps when prompted.
 3. Open the APK and install SWArmada.
@@ -163,22 +166,22 @@ limit in display settings.
 SHA-256 checksums:
 
 ```text
-73E2195BBDAA5E4D0511A2F74FD1ADF1EB761495BD5189F0053D24A078ADB717  SWArmada-0.1.6-Windows-x64.zip
-6A6DF5F81EDA58E3DC9C895120C116F0DD2E56BB6ABA786B540062482E61B150  SWArmada-0.1.6-Linux-x86_64.tar.gz
-A64E0674BABFE89B6BAF9815B4C4F03354362F0F1E82AD5CE6AD41470265D0B2  SWArmada-0.1.6-macOS.tar.gz
-2A6326BF070EA5F82EB2882146E799D16B19065FDBE67888C6D874081FCA0F98  SWArmada-0.1.6-Android-arm64.apk
+7FF03159560E615267FD3D042CE71AB379A583A71EF39132527A4D33E3995FB5  SWArmada-0.2.1-Windows-x64.zip
+EC68B2CDA404F2E759286A5C266E8BD370198CA3BBD038F14AFB6828C37B6AA2  SWArmada-0.2.1-Linux-x86_64.tar.gz
+DCC134C13C1FA6D15DC68341C750F60D8F3F931595A61398766AC009BA96E080  SWArmada-0.2.1-macOS.tar.gz
+31228DDCFB56A6D8977B2F9313D9C567A7F9298F042180FFBE4F88A0AD93D369  SWArmada-0.2.1-Android-arm64.apk
 ```
 
 In PowerShell, compare it with:
 
 ```powershell
-Get-FileHash .\SWArmada-0.1.6-Windows-x64.zip -Algorithm SHA256
+Get-FileHash .\SWArmada-0.2.1-Windows-x64.zip -Algorithm SHA256
 ```
 
 On Linux, compare it with:
 
 ```bash
-sha256sum SWArmada-0.1.6-Linux-x86_64.tar.gz
+sha256sum SWArmada-0.2.1-Linux-x86_64.tar.gz
 ```
 
 ## How it plays
@@ -196,16 +199,15 @@ tracking, and online synchronization.
 
 ## Project status
 
-Version `0.1.6` adds Android and delivers the Onager, controls, combat-input,
-multiplayer, chat, movement, and rules-correction release. It is an early build,
-not a finished commercial release. Features,
-rules behavior, balance, presentation, saved data, and multiplayer
-compatibility may change as the game develops. Bugs and incomplete content
-should be expected.
+Version `0.2.1` is the current public build. It is an early build, not a
+finished commercial release. Features, rules behavior, balance, presentation,
+saved data, and multiplayer compatibility may change as the game develops.
+Bugs and incomplete content should be expected.
 
 This repository is the public release home for SWArmada. It contains project
-information and release metadata; downloadable Windows, Linux, macOS, and
-Android builds are attached to GitHub Releases.
+information, the full [changelog](CHANGELOG.md), and release metadata;
+downloadable Windows, Linux, macOS, and Android builds are attached to GitHub
+Releases.
 
 ## Feedback and bug reports
 

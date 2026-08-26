@@ -4,6 +4,28 @@ This changelog preserves the complete notes from every published SWArmada
 release, newest first. Downloads and their original release descriptions remain
 available under [GitHub Releases](https://github.com/thetrufflegouda/SWArmada/releases).
 
+## [0.2.2](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.2) - 2026-08-26
+
+SWArmada 0.2.2 is a focused gameplay and inspection hotfix.
+
+### Fixed
+
+- Squadrons can no longer end a move with positive-area base overlap against another squadron or ship. Bases that merely touch remain legal.
+- The overlap rule now applies consistently to player movement, AI movement, special card-effect movement, and host-authoritative online/replay validation.
+- Ending squadron targeting no longer lets a stale squadron selection erase the active ship's shield pips and spatial condition display.
+- The condition wrench now restores the active ship and remains responsive after those targeting transitions.
+
+### Verification
+
+- Unity editor assembly compiled with 0 errors.
+- AI and squadron-movement verification passed, including overlap, touching, AI routing, and host-authority regressions.
+- Focused spatial dossier verification passed, including shield-pip persistence and wrench interaction.
+- Clean non-development builds: Windows x64, Linux x86-64, macOS Universal, Android ARM64.
+- Packaged scenes: MainMenu and Battle_Default only.
+- Windows packaged-player startup smoke passed.
+- Android: ARM64, version code 5, Android 8.0 / API 26 minimum.
+- SHA-256 sidecars and SHA256SUMS.txt are attached.
+
 ## [0.2.1](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.1) - 2026-08-26
 
 SWArmada 0.2.1 is a focused fleet-builder rules fix.

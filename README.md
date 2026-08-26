@@ -1,6 +1,6 @@
 # SWArmada
 
-![Version](https://img.shields.io/badge/version-0.2.1-00d9ff)
+![Version](https://img.shields.io/badge/version-0.2.2-00d9ff)
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64%20%7C%20Linux%20x86__64%20%7C%20macOS%20Universal%20%7C%20Android%20ARM64-6e7b8b)
 ![Status](https://img.shields.io/badge/status-early%20development-f08b32)
 
@@ -101,30 +101,31 @@ interface.
 - Laser fire, combat effects, spatial sound, and event-driven UI audio
 - A global scanline/CRT presentation inspired by retro tactical displays
 
-## What's new in 0.2.1
+## What's new in 0.2.2
 
-- Custom fleet limits now work correctly when equipping upgrades above 400
-  total points
-- The upgrade picker honors the selected Custom point limit while continuing
-  to enforce upgrade slots, faction restrictions, uniqueness, and card rules
-- Official Standard remains fixed at 400 fleet points and 134 squadron points
-- Fleet budgets use the actual combined cost of ships, upgrades, and
-  squadrons; squadron points are not reserved
+- Squadron moves can no longer end with positive-area base overlap against
+  another squadron or ship; bases that merely touch remain legal
+- The overlap rule is enforced for player, AI, special-effect, online, and
+  replay movement
+- Ending squadron targeting no longer erases the active ship's shield pips or
+  spatial condition display
+- The condition wrench restores the active ship and remains responsive after
+  those targeting transitions
 
-See [the complete 0.2.1 release notes](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.1)
+See [the complete 0.2.2 release notes](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.2)
 or browse the full [changelog](CHANGELOG.md).
 
 ## Download and install
 
-The current public build is **SWArmada 0.2.1** for **Windows x64**,
+The current public build is **SWArmada 0.2.2** for **Windows x64**,
 **Linux x86-64**, **macOS Universal**, and **Android ARM64**.
 
-1. Open the [`v0.2.1` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.1).
+1. Open the [`v0.2.2` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.2).
 2. Download the archive for your platform.
 
 ### Windows x64
 
-1. Download `SWArmada-0.2.1-Windows-x64.zip`.
+1. Download `SWArmada-0.2.2-Windows-x64.zip`.
 2. Extract the entire ZIP to a writable folder.
 3. Run `SWArmada.exe`.
 
@@ -134,7 +135,7 @@ not code-signed.
 
 ### Linux x86-64
 
-1. Download `SWArmada-0.2.1-Linux-x86_64.tar.gz`.
+1. Download `SWArmada-0.2.2-Linux-x86_64.tar.gz`.
 2. Extract the entire archive.
 3. Run `./SWArmada.x86_64` from the extracted folder.
 
@@ -143,7 +144,7 @@ does not preserve it, run `chmod +x SWArmada.x86_64` first.
 
 ### macOS Universal
 
-1. Download `SWArmada-0.2.1-macOS.tar.gz`.
+1. Download `SWArmada-0.2.2-macOS.tar.gz`.
 2. Extract the entire archive.
 3. Open `SWArmada.app`.
 
@@ -153,7 +154,7 @@ Open, or approve it under Privacy & Security, on first launch.
 
 ### Android ARM64
 
-1. Download `SWArmada-0.2.1-Android-arm64.apk` on an ARM64 device running
+1. Download `SWArmada-0.2.2-Android-arm64.apk` on an ARM64 device running
    Android 8.0 / API 26 or newer.
 2. Allow your browser or file manager to install unknown apps when prompted.
 3. Open the APK and install SWArmada.
@@ -166,22 +167,22 @@ limit in display settings.
 SHA-256 checksums:
 
 ```text
-7FF03159560E615267FD3D042CE71AB379A583A71EF39132527A4D33E3995FB5  SWArmada-0.2.1-Windows-x64.zip
-EC68B2CDA404F2E759286A5C266E8BD370198CA3BBD038F14AFB6828C37B6AA2  SWArmada-0.2.1-Linux-x86_64.tar.gz
-DCC134C13C1FA6D15DC68341C750F60D8F3F931595A61398766AC009BA96E080  SWArmada-0.2.1-macOS.tar.gz
-31228DDCFB56A6D8977B2F9313D9C567A7F9298F042180FFBE4F88A0AD93D369  SWArmada-0.2.1-Android-arm64.apk
+EB06B3F8751D8DB11B02EB2566F13619668C6D1D976647310A8B9F4CF21CDA5A  SWArmada-0.2.2-Windows-x64.zip
+9B2C9EBE4D37F76561A6CF1FE8B1C6983AD597C1607B07845E86810AC30AA7CD  SWArmada-0.2.2-Linux-x86_64.tar.gz
+E23F29644B148A2CFB9C8CB3CFFC6651550ECE69BE441E3D2F3BDC5DE4D6B696  SWArmada-0.2.2-macOS.tar.gz
+171B9567E4F4E494DA9032ED3FD224B282E446C6DDA11A2D2ED77A67C6A398F7  SWArmada-0.2.2-Android-arm64.apk
 ```
 
 In PowerShell, compare it with:
 
 ```powershell
-Get-FileHash .\SWArmada-0.2.1-Windows-x64.zip -Algorithm SHA256
+Get-FileHash .\SWArmada-0.2.2-Windows-x64.zip -Algorithm SHA256
 ```
 
 On Linux, compare it with:
 
 ```bash
-sha256sum SWArmada-0.2.1-Linux-x86_64.tar.gz
+sha256sum SWArmada-0.2.2-Linux-x86_64.tar.gz
 ```
 
 ## How it plays
@@ -199,7 +200,7 @@ tracking, and online synchronization.
 
 ## Project status
 
-Version `0.2.1` is the current public build. It is an early build, not a
+Version `0.2.2` is the current public build. It is an early build, not a
 finished commercial release. Features, rules behavior, balance, presentation,
 saved data, and multiplayer compatibility may change as the game develops.
 Bugs and incomplete content should be expected.

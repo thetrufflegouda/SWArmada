@@ -13,6 +13,7 @@ SWArmada 0.2.3 is a battle-flow, rules, inspection, and combat-presentation repa
 - Fixed the Haor Chall reaction path that could leave a ship stuck after firing at a squadron and committing movement.
 - Corrected ship-to-ship hull-zone targeting and line of sight to use the physical base geometry, including legal nose-to-nose front-zone attacks.
 - Corrected special ignition weapons to use each weapon's own printed arc and range. Attack planning now shows the exact token-centered reach as a solid amber overlay, while token placement uses a clean dashed maximum-range cap.
+- Android targeting-token placement now accepts an immediate tap and stages the chosen point for the existing confirm/reposition step instead of requiring an undocumented press-and-hold gesture.
 - SPHA-T now reduces the ship's effective Squadron value everywhere it is presented and resolved.
 - Squadron Brace, Scatter, and Evade choices now go directly to the exact physical token instead of opening a redundant extra menu. AI squadrons also spend useful defense tokens when available.
 - Corrected Reactive Gunnery, Salvo, close-range Evade, Demolisher and Engine Techs, Navigate-command timing, Beck command timing, and Centicore Relay interactions.

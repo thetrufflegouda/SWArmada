@@ -108,6 +108,8 @@ interface.
 - Fixed the Haor Chall reaction softlock and strengthened AI defense choices
 - Command dials commit once, while Squadron commands clearly report and track
   only eligible in-range or Relay squadrons
+- Android targeting-token placement now stages from a direct tap before its
+  existing confirm or reposition step
 - Shield pips and spatial condition information now remain available throughout
   command, attack, targeting, and waiting states
 - Expanded legal-range cues, attack announcements, laser reliability, camera
@@ -173,7 +175,7 @@ SHA-256 checksums:
 CD5592B35C65591322ADCE1055D6F00BB93B175FF3ACE46DCC4B3FD71B61FBA0  SWArmada-0.2.3-Windows-x64.zip
 4286B89B5E59E3C7E767B99D03C3E3B0DBA7B573163C5CFEE099F8943BCAD7AC  SWArmada-0.2.3-Linux-x86_64.tar.gz
 D935AFCB4E0D9C73A73833FA01CFA793E2B74C898CD98F88845C042DC9CD4A3D  SWArmada-0.2.3-macOS.tar.gz
-7D8F0D5D0ED7F67B4ADEDDD5E2565D69DEC845DE476BB6BC96D80258DC67D913  SWArmada-0.2.3-Android-arm64.apk
+08065547EF57C2D3D05806075A15EF7B87F3C53047D8C795FE044DE76ED25364  SWArmada-0.2.3-Android-arm64.apk
 ```
 
 In PowerShell, compare it with:

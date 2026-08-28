@@ -4,6 +4,38 @@ This changelog preserves the complete notes from every published SWArmada
 release, newest first. Downloads and their original release descriptions remain
 available under [GitHub Releases](https://github.com/thetrufflegouda/SWArmada/releases).
 
+## [0.2.3](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.3) - 2026-08-28
+
+SWArmada 0.2.3 is a battle-flow, rules, inspection, and combat-presentation repair release built from the latest live playtests.
+
+### Fixed
+
+- Fixed the Haor Chall reaction path that could leave a ship stuck after firing at a squadron and committing movement.
+- Corrected ship-to-ship hull-zone targeting and line of sight to use the physical base geometry, including legal nose-to-nose front-zone attacks.
+- Corrected special ignition weapons to use each weapon's own printed arc and range. Attack planning now shows the exact token-centered reach as a solid amber overlay, while token placement uses a clean dashed maximum-range cap.
+- SPHA-T now reduces the ship's effective Squadron value everywhere it is presented and resolved.
+- Squadron Brace, Scatter, and Evade choices now go directly to the exact physical token instead of opening a redundant extra menu. AI squadrons also spend useful defense tokens when available.
+- Corrected Reactive Gunnery, Salvo, close-range Evade, Demolisher and Engine Techs, Navigate-command timing, Beck command timing, and Centicore Relay interactions.
+- Command dials now commit with one click and retain the intended selection during the dial animation.
+- Squadron commands report the number of currently eligible squadrons in range or through Relay, clearly track activations, and provide an explicit skip action.
+- Enemy units remain inspectable during the other player's turn without submitting an illegal activation command.
+- Ship shield pips and spatial condition information remain available through command, attack, targeting, and waiting states. The attacking ship's own shield pip no longer flashes as duplicate combat feedback.
+- Squadron movement, displacement, and attack targeting now share the same legal-range cues, overlap protection, and faction-coloured presentation.
+- Attack participants, defense tokens, upgrade abilities, selected dice effects, and accepted critical effects are shown more clearly to both players during resolution.
+- Restored reliable ship and squadron laser beams, including Republic green capital-ship fire and Separatist red capital-ship fire; Clone Wars squadrons use red fire.
+- Corrected attack and dogfight camera tracking, ship-activation framing, movement easing, faction-coloured selection glows, squadron base rendering, and combat overlays.
+- Refined compact action-button borders, non-scrolling transient instructions, attack-resolution layout, fleet-management headings, and critical-effect wording.
+
+### Verification
+
+- Unity editor assembly compiled with 0 errors.
+- Battle Presentation, Attack Interaction, Attack Range, AI Foundation, Playtest Recorder, Android Touch and Placement, official timing repairs, current combat fixes, open-issue repairs, and all 44 Clone Wars checks passed.
+- Clean non-development builds: Windows x64, Linux x86-64, macOS Universal, Android ARM64.
+- Packaged scenes: MainMenu and Battle_Default only.
+- Android: ARM64, version code 6, Android 8.0 / API 26 minimum.
+- Windows packaged-player startup smoke passed.
+- SHA-256 sidecars and SHA256SUMS.txt are attached.
+
 ## [0.2.2](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.2) - 2026-08-26
 
 SWArmada 0.2.2 is a focused gameplay and inspection hotfix.

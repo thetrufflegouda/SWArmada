@@ -1,39 +1,39 @@
 {
   "name": "SWArmada",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "assets": [
     {
       "platform": "Windows x64",
-      "asset": "SWArmada-0.2.2-Windows-x64.zip",
-      "assetBytes": 172220850,
-      "uncompressedBytes": 485916028,
-      "entryCount": 238,
-      "sha256": "EB06B3F8751D8DB11B02EB2566F13619668C6D1D976647310A8B9F4CF21CDA5A"
+      "asset": "SWArmada-0.2.3-Windows-x64.zip",
+      "assetBytes": 176281150,
+      "uncompressedBytes": 485963132,
+      "entryCount": 222,
+      "sha256": "CD5592B35C65591322ADCE1055D6F00BB93B175FF3ACE46DCC4B3FD71B61FBA0"
     },
     {
       "platform": "Linux x86-64",
-      "asset": "SWArmada-0.2.2-Linux-x86_64.tar.gz",
-      "assetBytes": 169232017,
-      "uncompressedBytes": 483755591,
+      "asset": "SWArmada-0.2.3-Linux-x86_64.tar.gz",
+      "assetBytes": 171021963,
+      "uncompressedBytes": 483802695,
       "entryCount": 231,
-      "sha256": "9B2C9EBE4D37F76561A6CF1FE8B1C6983AD597C1607B07845E86810AC30AA7CD"
+      "sha256": "4286B89B5E59E3C7E767B99D03C3E3B0DBA7B573163C5CFEE099F8943BCAD7AC"
     },
     {
       "platform": "macOS Universal",
-      "asset": "SWArmada-0.2.2-macOS.tar.gz",
-      "assetBytes": 180004917,
-      "uncompressedBytes": 503184241,
+      "asset": "SWArmada-0.2.3-macOS.tar.gz",
+      "assetBytes": 181736371,
+      "uncompressedBytes": 503231345,
       "entryCount": 243,
-      "sha256": "E23F29644B148A2CFB9C8CB3CFFC6651550ECE69BE441E3D2F3BDC5DE4D6B696"
+      "sha256": "D935AFCB4E0D9C73A73833FA01CFA793E2B74C898CD98F88845C042DC9CD4A3D"
     },
     {
       "platform": "Android ARM64",
-      "asset": "SWArmada-0.2.2-Android-arm64.apk",
-      "assetBytes": 190213492,
-      "uncompressedBytes": 468447090,
+      "asset": "SWArmada-0.2.3-Android-arm64.apk",
+      "assetBytes": 190260076,
+      "uncompressedBytes": 468575098,
       "entryCount": 1678,
-      "sha256": "171B9567E4F4E494DA9032ED3FD224B282E446C6DDA11A2D2ED77A67C6A398F7"
+      "sha256": "7D8F0D5D0ED7F67B4ADEDDD5E2565D69DEC845DE476BB6BC96D80258DC67D913"
     }
   ],
-  "builtAt": "2026-08-26"
+  "builtAt": "2026-08-28"
 }

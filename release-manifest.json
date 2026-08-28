@@ -29,10 +29,10 @@
     {
       "platform": "Android ARM64",
       "asset": "SWArmada-0.2.3-Android-arm64.apk",
-      "assetBytes": 190259532,
-      "uncompressedBytes": 468575418,
+      "assetBytes": 190260880,
+      "uncompressedBytes": 468576114,
       "entryCount": 1678,
-      "sha256": "08065547EF57C2D3D05806075A15EF7B87F3C53047D8C795FE044DE76ED25364"
+      "sha256": "F2AC20AA7C8A7C2A07D3DC32019B2E547E640C9F89D6994D0BB64157D4688306"
     }
   ],
   "builtAt": "2026-08-28"

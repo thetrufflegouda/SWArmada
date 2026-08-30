@@ -4,6 +4,26 @@ This changelog preserves the complete notes from every published SWArmada
 release, newest first. Downloads and their original release descriptions remain
 available under [GitHub Releases](https://github.com/thetrufflegouda/SWArmada/releases).
 
+## [0.2.4](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.4) - 2026-08-29
+
+SWArmada 0.2.4 is a focused squadron-phase and maneuver-presentation hotfix.
+
+### Fixed
+
+- Hera Syndulla (Ghost) now offers her ability at the start of the Squadron Phase, lets her owner choose up to two legal friendly squadrons at distance 1-2, and grants them Temporary Rogue through the end of the round.
+- Temporary Rogue now survives the granted squadron's activation cleanup, enables normal Rogue move-and-attack behavior, and clears during the Status Phase.
+- An empty Squadron Phase batch now identifies the current player and uses `PASS TO PLAYER X`. Selecting the other player's squadron during the current batch explains the ownership handoff instead of appearing unresponsive.
+- The speed-zero ram acceptance arrow now anchors above and outside the complete rendered ship model, including tall and overhanging hulls such as the Assault Frigate, without changing the authoritative maneuver destination.
+
+### Verification
+
+- Android Touch and Placement, GitHub Issue Repairs, Battle Presentation, and AI Foundation passed.
+- The final Android ARM64 APK was tablet-tested and remains version code 7 with Android 8.0 / API 26 minimum.
+- Clean non-development builds: Windows x64, Linux x86-64, macOS Universal, Android ARM64.
+- Packaged scenes: MainMenu and Battle_Default only.
+- Windows packaged-player startup smoke passed.
+- SHA-256 sidecars and SHA256SUMS.txt are attached.
+
 ## [0.2.3](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.3) - 2026-08-28
 
 SWArmada 0.2.3 is a battle-flow, rules, inspection, and combat-presentation repair release built from the latest live playtests.

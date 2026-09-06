@@ -4,6 +4,39 @@ This changelog preserves the complete notes from every published SWArmada
 release, newest first. Downloads and their original release descriptions remain
 available under [GitHub Releases](https://github.com/thetrufflegouda/SWArmada/releases).
 
+## [0.2.5](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.5) - 2026-09-05
+
+SWArmada 0.2.5 improves the opening presentation, contrast controls, command handling, and battle readability.
+
+### Presentation and settings
+
+- Added a skippable animated-logo intro that fades into the main menu.
+- Renamed Brightness to Contrast and expanded the adjustment range. The default 100% setting preserves the tuned appearance.
+- Desktop Contrast adjusts the existing CRT effect. Android has its own contrast adjustment while retaining its lighter rendering path.
+- Fleet previews and battle dossiers show separate anti-ship and anti-squadron weapon groups, with colored keys for light, medium, and heavy guns.
+- Ships now glide to their legal movement endpoints. Maneuver and collision rules are unchanged.
+
+### Commands
+
+- Chimaera offers its Fleet Command-card picker each Command Phase, with a Keep Current option, protection against duplicate taps, and retry after a rejected online choice.
+- Programmed command dials appear top-first above the ship title for their owner. Thrawn's additional dial is labeled.
+- Already-resolved commands cannot be resolved again; legal bank and discard choices remain available.
+
+### Fixes found during testing
+
+- Fixed unwanted bloom and opaque backgrounds in ship portraits and command-dial previews.
+- Fixed an AI loop where Colonel Jendon repeatedly selected a squadron with no legal attack.
+- Fixed a severe Windows frame-rate drop caused by missing ambient-occlusion resources and repeated diagnostic-file writes.
+- Restored squadron idle animations in standalone builds by correcting a frozen starting clock, and added a build check to prevent it recurring.
+- Restored the in-battle MENU button on Android.
+
+### Verification
+
+- Clean non-development builds for Windows x64, Linux x86-64, macOS Universal, and Android ARM64.
+- Starting clock, packaged scenes, rendering resources, preview isolation, and shared fix code checked across all four platforms.
+- AI Foundation, Playtest Recorder, Android Touch and Placement, squadron presentation, and PC/Android contrast checks passed.
+- Android version code 8; Android 8.0 / API 26 minimum. SHA-256 sidecars and SHA256SUMS.txt are attached.
+
 ## [0.2.4](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.4) - 2026-08-29
 
 SWArmada 0.2.4 is a focused squadron-phase and maneuver-presentation hotfix.

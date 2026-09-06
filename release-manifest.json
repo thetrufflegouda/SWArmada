@@ -1,39 +1,39 @@
 {
   "name": "SWArmada",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "assets": [
     {
       "platform": "Windows x64",
-      "asset": "SWArmada-0.2.4-Windows-x64.zip",
-      "assetBytes": 176282379,
-      "uncompressedBytes": 485970076,
-      "entryCount": 222,
-      "sha256": "5969332C88E3C4951A78EC0768087339AF0AB6E09068745EE36D8989D4398C3B"
+      "asset": "SWArmada-0.2.5-Windows-x64.zip",
+      "assetBytes": 205250427,
+      "uncompressedBytes": 512683418,
+      "entryCount": 224,
+      "sha256": "8e0bf08802a72b4b84cf8f03b21047eb4b5ccd0a85ffa0080681046c8acf25e3"
     },
     {
       "platform": "Linux x86-64",
-      "asset": "SWArmada-0.2.4-Linux-x86_64.tar.gz",
-      "assetBytes": 171026003,
-      "uncompressedBytes": 483810775,
-      "entryCount": 231,
-      "sha256": "F5945F2034DC59AB311F7A3BD39A0BAB7DE13D464F31F764F13443A3A8E541A8"
+      "asset": "SWArmada-0.2.5-Linux-x86_64.tar.gz",
+      "assetBytes": 203220723,
+      "uncompressedBytes": 510524117,
+      "entryCount": 234,
+      "sha256": "c55100a97038584a901f98d5647a8911344344dc4f693e0436710e47aa01d71b"
     },
     {
       "platform": "macOS Universal",
-      "asset": "SWArmada-0.2.4-macOS.tar.gz",
-      "assetBytes": 181738570,
-      "uncompressedBytes": 503239009,
-      "entryCount": 243,
-      "sha256": "82E16C9A35F5A7FA7878D6DD6929DCEAAF7DC7D26D589AEA93861C76D87839F6"
+      "asset": "SWArmada-0.2.5-macOS.tar.gz",
+      "assetBytes": 214335173,
+      "uncompressedBytes": 529952953,
+      "entryCount": 246,
+      "sha256": "9715b5613cc847c2e1de6da1a2344855c4aaaaedfe14978be4d5a5d66c203504"
     },
     {
       "platform": "Android ARM64",
-      "asset": "SWArmada-0.2.4-Android-arm64.apk",
-      "assetBytes": 190262000,
-      "uncompressedBytes": 468586304,
-      "entryCount": 1678,
-      "sha256": "57B4EC1F59BD42C7C7B1F8ABEE66072541CD4560EA03468F7FFEB64F321BB703"
+      "asset": "SWArmada-0.2.5-Android-arm64.apk",
+      "assetBytes": 220294061,
+      "uncompressedBytes": 497746592,
+      "entryCount": 1679,
+      "sha256": "b1a45500c80861526d87bd650166b61771b13c585dca1bed8dd6a1cf23154685"
     }
   ],
-  "builtAt": "2026-08-29"
+  "builtAt": "2026-09-05"
 }

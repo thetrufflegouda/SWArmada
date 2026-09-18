@@ -4,6 +4,38 @@ This changelog preserves the complete notes from every published SWArmada
 release, newest first. Downloads and their original release descriptions remain
 available under [GitHub Releases](https://github.com/thetrufflegouda/SWArmada/releases).
 
+## [0.2.6](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.6) - 2026-09-18
+
+SWArmada 0.2.6 repairs reported rules and battle-flow problems and makes unit dossiers more complete.
+
+### Rules and battle flow
+
+- Corrected both Separatist Providence variants to hull 9 and maximum speed 3, with their complete maneuver charts.
+- Added Hera X-wing's Adept aura, Fenn Rau's extra squadron activations, and Mart Mattin's mine-placement ability.
+- Ships can attack proximity mines with anti-squadron dice. Mine placement and triggering use token-edge distances, and supported attack modifiers work against mines.
+- Fixed Officer Ozzel's opening maneuver prompt and Tarkin-to-Cataclysm timing.
+- Spending a saved Concentrate Fire token now enables Gunnery Team. Heavy Fire Zone correctly allows converted red anti-squadron dice at long range.
+- Added the larger-attacker Evade discard option and Mar Tuuk's required die cancellation against completely shieldless ships.
+- Salvo offers legal optional dice modifications, including DBY-827 and ship-targeting Intensify Firepower, with control assigned to the correct player. A ship destroyed by Salvo no longer continues attacking or moving.
+- Required ignition targeting hides unavailable Skip and Back actions. Linked Turbolaser Towers applies its Bombard restriction against ships.
+- Includes the earlier local fixes for huge-ship hull zones, command timing, defense-token choices, Counter, squadron continuation and Raddus AI deployment recovery.
+
+### Dossiers and controls
+
+- Ship dossiers now include traits such as Bombard, complete maneuver charts, ignition armament and upgrade slots.
+- Squadron dossiers and fleet previews show defense tokens and effective granted abilities, speed and restrictions. Adept and other ability shortcuts display their rules descriptions.
+- Cleaned up the ability heading layout and fixed the maneuver guide shifting between zero-yaw joints after a Navigate turn.
+- Preserved the approved battle/menu GlobalVolume settings and platform rendering profiles.
+
+### Verification
+
+- Focused rules, command ownership, AI, defense-token, ignition, recorder and maneuver checks passed.
+- Dossier coverage checked across 66 ships and 107 squadrons.
+- Live editor test passed Mart placement, mine picking, attack/modifier buttons, removal and return of control.
+- Windows x64, Linux x86-64, macOS Universal and Android ARM64 release builds; Android version code 9. Platform-specific smoke results are recorded with the build manifest.
+- Windows native startup and Linux menu startup under WSL checked. Android package/signature and macOS universal binaries verified; Android device and native macOS playtests remain pending.
+- The original AI stall in #15, the AI taking over the human fleet in #17, and the Reddit report of attacks sometimes needing to be repeated remain unreproduced and unresolved. Related fixes and passing targeted tests do not establish those exact incidents as solved.
+
 ## [0.2.5](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.5) - 2026-09-05
 
 SWArmada 0.2.5 improves the opening presentation, contrast controls, command handling, and battle readability.

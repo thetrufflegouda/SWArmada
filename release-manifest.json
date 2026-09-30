@@ -1,45 +1,45 @@
 {
   "name": "SWArmada",
-  "version": "0.2.6",
-  "builtAt": "2026-09-17",
+  "version": "0.2.7",
+  "builtAt": "2026-09-30",
   "assets": [
     {
       "platform": "Windows x64",
-      "asset": "SWArmada-0.2.6-Windows-x64.zip",
-      "assetBytes": 205298875,
-      "uncompressedBytes": 513801718,
+      "asset": "SWArmada-0.2.7-Windows-x64.zip",
+      "assetBytes": 205311744,
+      "uncompressedBytes": 513839300,
       "entryCount": 221,
-      "sha256": "65ae9d3337e477260478a3b5b253d41d5cca63f5b868ce916eab6f708a323cf4",
-      "downloadUrl": "https://github.com/thetrufflegouda/SWArmada/releases/download/v0.2.6/SWArmada-0.2.6-Windows-x64.zip"
+      "sha256": "9f281e2691450b2279e2daa6edd3983c6c2752ba5fbdc1f201a41a7a4a525252",
+      "downloadUrl": "https://github.com/thetrufflegouda/SWArmada/releases/download/v0.2.7/SWArmada-0.2.7-Windows-x64.zip"
     },
     {
       "platform": "Linux x86-64",
-      "asset": "SWArmada-0.2.6-Linux-x86_64.tar.gz",
-      "assetBytes": 199668460,
-      "uncompressedBytes": 510591781,
+      "asset": "SWArmada-0.2.7-Linux-x86_64.tar.gz",
+      "assetBytes": 199677638,
+      "uncompressedBytes": 510629363,
       "entryCount": 216,
-      "sha256": "d866ab7e5daf76e406d8c6861a4dce61b634f2b260099b9c4d8effdb06aff6dc",
-      "downloadUrl": "https://github.com/thetrufflegouda/SWArmada/releases/download/v0.2.6/SWArmada-0.2.6-Linux-x86_64.tar.gz"
+      "sha256": "ae6edecb7d5d07223a39cf2412d8c913fda1759260832267c198c7fce5b51673",
+      "downloadUrl": "https://github.com/thetrufflegouda/SWArmada/releases/download/v0.2.7/SWArmada-0.2.7-Linux-x86_64.tar.gz"
     },
     {
       "platform": "macOS Universal",
-      "asset": "SWArmada-0.2.6-macOS.tar.gz",
-      "assetBytes": 210378649,
-      "uncompressedBytes": 530020617,
+      "asset": "SWArmada-0.2.7-macOS.tar.gz",
+      "assetBytes": 210390281,
+      "uncompressedBytes": 530058199,
       "entryCount": 222,
-      "sha256": "b23d5c2880c32571347503956d5dc86c7dadbb4dd08870895e6b5e6b1e231725",
-      "downloadUrl": "https://github.com/thetrufflegouda/SWArmada/releases/download/v0.2.6/SWArmada-0.2.6-macOS.tar.gz"
+      "sha256": "c04e6b15e2a14387525226083b914e7b57c0bb0e265a172908f7287f3c52c0a6",
+      "downloadUrl": "https://github.com/thetrufflegouda/SWArmada/releases/download/v0.2.7/SWArmada-0.2.7-macOS.tar.gz"
     },
     {
       "platform": "Android ARM64",
-      "asset": "SWArmada-0.2.6-Android-arm64.apk",
-      "assetBytes": 219946721,
-      "uncompressedBytes": 497634000,
+      "asset": "SWArmada-0.2.7-Android-arm64.apk",
+      "assetBytes": 220468549,
+      "uncompressedBytes": 498365918,
       "entryCount": 1679,
-      "sha256": "3a73e5518cd965dd1fc13c55fd0be4cee8502cb8217ba52fbd07f098e7594063",
-      "downloadUrl": "https://github.com/thetrufflegouda/SWArmada/releases/download/v0.2.6/SWArmada-0.2.6-Android-arm64.apk"
+      "sha256": "9b4d85888e5c6eaa7f0ee16fdf3c5f29fd03682718e9018a6494b7829419fa58",
+      "downloadUrl": "https://github.com/thetrufflegouda/SWArmada/releases/download/v0.2.7/SWArmada-0.2.7-Android-arm64.apk"
     }
   ],
-  "releaseUrl": "https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.6",
-  "publishedAt": "2026-09-18T19:40:25Z"
+  "releaseUrl": "https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.7",
+  "publishedAt": "2026-09-30T16:15:06Z"
 }

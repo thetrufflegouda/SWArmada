@@ -1,6 +1,6 @@
 # SWArmada
 
-![Version](https://img.shields.io/badge/version-0.2.6-00d9ff)
+![Version](https://img.shields.io/badge/version-0.2.7-00d9ff)
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64%20%7C%20Linux%20x86__64%20%7C%20macOS%20Universal%20%7C%20Android%20ARM64-6e7b8b)
 ![Status](https://img.shields.io/badge/status-early%20development-f08b32)
 
@@ -101,27 +101,27 @@ interface.
 - Laser fire, combat effects, spatial sound, and event-driven UI audio
 - A global scanline/CRT presentation inspired by retro tactical displays
 
-## What's new in 0.2.6
+## What's new in 0.2.7
 
-- Corrected Separatist Providence stats and maneuver charts, and added Hera X-wing, Fenn Rau, and Mart Mattin abilities
-- Ships can attack proximity mines, with corrected placement distances and supported attack modifiers
-- Repairs to ignition, Salvo, command timing, defense-token choices, and huge-ship rules
-- More complete unit dossiers, ability tooltips, and stable maneuver previews after Navigate turns
+- Repairs to attack ownership, AI continuation, queued commands, squadron deployment and card effects, including Ten Numb, Lucid Voice and Biggs
+- Reliable ship condition overlays and clickable inspection diamonds anchored above names, with ship titles underneath
+- Clearer mine results, unit-choice ring highlighting, damage flashes and squadron weapon rows
+- Global shader effects across the UI, repaired sandbox/map-maker layouts, and clearer fleet-import instructions
 
-See [the complete 0.2.6 release notes](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.6)
+See [the complete 0.2.7 release notes](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.7)
 or browse the full [changelog](CHANGELOG.md).
 
 ## Download and install
 
-The current public build is **SWArmada 0.2.6** for **Windows x64**,
+The current public build is **SWArmada 0.2.7** for **Windows x64**,
 **Linux x86-64**, **macOS Universal**, and **Android ARM64**.
 
-1. Open the [`v0.2.6` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.6).
+1. Open the [`v0.2.7` release](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.7).
 2. Download the archive for your platform.
 
 ### Windows x64
 
-1. Download `SWArmada-0.2.6-Windows-x64.zip`.
+1. Download `SWArmada-0.2.7-Windows-x64.zip`.
 2. Extract the entire ZIP to a writable folder.
 3. Run `SWArmada.exe`.
 
@@ -131,7 +131,7 @@ not code-signed.
 
 ### Linux x86-64
 
-1. Download `SWArmada-0.2.6-Linux-x86_64.tar.gz`.
+1. Download `SWArmada-0.2.7-Linux-x86_64.tar.gz`.
 2. Extract the entire archive.
 3. Run `./SWArmada.x86_64` from the extracted folder.
 
@@ -140,7 +140,7 @@ does not preserve it, run `chmod +x SWArmada.x86_64` first.
 
 ### macOS Universal
 
-1. Download `SWArmada-0.2.6-macOS.tar.gz`.
+1. Download `SWArmada-0.2.7-macOS.tar.gz`.
 2. Extract the entire archive.
 3. Open `SWArmada.app`.
 
@@ -150,7 +150,7 @@ Open, or approve it under Privacy & Security, on first launch.
 
 ### Android ARM64
 
-1. Download `SWArmada-0.2.6-Android-arm64.apk` on an ARM64 device running
+1. Download `SWArmada-0.2.7-Android-arm64.apk` on an ARM64 device running
    Android 8.0 / API 26 or newer.
 2. Allow your browser or file manager to install unknown apps when prompted.
 3. Open the APK and install SWArmada.
@@ -163,22 +163,22 @@ limit in display settings.
 SHA-256 checksums:
 
 ```text
-65ae9d3337e477260478a3b5b253d41d5cca63f5b868ce916eab6f708a323cf4  SWArmada-0.2.6-Windows-x64.zip
-d866ab7e5daf76e406d8c6861a4dce61b634f2b260099b9c4d8effdb06aff6dc  SWArmada-0.2.6-Linux-x86_64.tar.gz
-b23d5c2880c32571347503956d5dc86c7dadbb4dd08870895e6b5e6b1e231725  SWArmada-0.2.6-macOS.tar.gz
-3a73e5518cd965dd1fc13c55fd0be4cee8502cb8217ba52fbd07f098e7594063  SWArmada-0.2.6-Android-arm64.apk
+9f281e2691450b2279e2daa6edd3983c6c2752ba5fbdc1f201a41a7a4a525252  SWArmada-0.2.7-Windows-x64.zip
+ae6edecb7d5d07223a39cf2412d8c913fda1759260832267c198c7fce5b51673  SWArmada-0.2.7-Linux-x86_64.tar.gz
+c04e6b15e2a14387525226083b914e7b57c0bb0e265a172908f7287f3c52c0a6  SWArmada-0.2.7-macOS.tar.gz
+9b4d85888e5c6eaa7f0ee16fdf3c5f29fd03682718e9018a6494b7829419fa58  SWArmada-0.2.7-Android-arm64.apk
 ```
 
 In PowerShell, compare it with:
 
 ```powershell
-Get-FileHash .\SWArmada-0.2.6-Windows-x64.zip -Algorithm SHA256
+Get-FileHash .\SWArmada-0.2.7-Windows-x64.zip -Algorithm SHA256
 ```
 
 On Linux, compare it with:
 
 ```bash
-sha256sum SWArmada-0.2.6-Linux-x86_64.tar.gz
+sha256sum SWArmada-0.2.7-Linux-x86_64.tar.gz
 ```
 
 ## How it plays
@@ -196,15 +196,16 @@ tracking, and online synchronization.
 
 ## Project status
 
-Version `0.2.6` is the current public build. It is an early build, not a
+Version `0.2.7` is the current public build. It is an early build, not a
 finished commercial release. Features, rules behavior, balance, presentation,
 saved data, and multiplayer compatibility may change as the game develops.
 Bugs and incomplete content should be expected.
 
 Known unresolved reports include [AI stalls (#15)](https://github.com/thetrufflegouda/SWArmada/issues/15),
 [AI taking over the human fleet (#17)](https://github.com/thetrufflegouda/SWArmada/issues/17),
-and attacks occasionally needing repeated input. See the
-[0.2.6 release notes](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.6)
+attacks occasionally needing repeated input, and the original
+[macOS station freeze (#56)](https://github.com/thetrufflegouda/SWArmada/issues/56). See the
+[0.2.7 release notes](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.7)
 for verification details and platform test limits.
 
 This repository is the public release home for SWArmada. It contains project

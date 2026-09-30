@@ -4,6 +4,41 @@ This changelog preserves the complete notes from every published SWArmada
 release, newest first. Downloads and their original release descriptions remain
 available under [GitHub Releases](https://github.com/thetrufflegouda/SWArmada/releases).
 
+## [0.2.7](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.7) - 2026-09-30
+
+SWArmada 0.2.7 fixes battle control, card effects and disappearing ship information, with a clearer interface across battles, fleet importing and the editors.
+
+### Battle flow and rules
+
+- Fixed attack and defense ownership paths that could let the defending AI skip the attacker's actions, lose damage resolution or strand a squadron's carrier. Legal second attacks now survive human defense handoffs, and animation waits no longer consume the AI decision budget.
+- Fixed huge-ship straight-maneuver planning and command sequencing that could trap AI fleets in repeated actions. AI setup now selects legal reserves for Raddus, Profundity, Rapid Launch Bays and Hyperspace Rings.
+- Repaired Rapid Launch Bays movement restrictions, optional Flight Commander postponement and queued-dial timing. Squadron displacement uses the opposing player's control and banner; a final lone squadron waits for undeployed ships.
+- Restored legal ability buttons after control handoffs, including first-defense Reactive Gunnery, Scatter and Expert Shield Tech, plus Resupply choices.
+- Implemented Ten Numb's optional blue-critical collateral damage and corrected Lucid Voice's three-red ship Salvo armament.
+- Fixed Biggs's transfer eligibility during flak and collateral damage, including exclusion of the original victim. Consecutive casualties finish their individual recovery choices; lethal collateral and Task Force Antilles transfers resolve destruction and commander timing correctly.
+- Corrected Intel/Grit engagement handling, Anakin's own-activation restriction, SPHA-T arcs and matching Task Force title requirements. Large fleets now stage within the board. Exodus Fleet feedback identifies the exhausted donor.
+- Independence's speed-4 option now clearly states that the squadron cannot attack that activation.
+
+### Battle information and interface
+
+- Fixed capital-ship condition information disappearing during command programming, movement plotting and other choices. Inspection diamonds keep condition, weapons and dossier information accessible throughout gameplay.
+- Anchored inspection diamonds above ship names as the camera moves. Equipped ship titles appear in parentheses on a separate line below the name.
+- Hovering a ship or squadron choice flashes that unit's ring so identical names can be distinguished. The name stays steady.
+- Damage flashes belong to the damaged ship; an enemy hit no longer flashes a friendly ship's shield pips.
+- Proximity-mine results display the roll and hull change before play advances, including an explicit no-damage result, and retain the outcome in the combat record.
+- Reworked squadron weapon rows with anti-ship first and anti-fighter second, compact aligned groups, colored dice pips and clearer separation from defense tokens and capabilities.
+- Applied the existing global shader effects to the full UI and corrected diamond input for the camera-rendered interface.
+- Fixed squeezed and duplicated UI in Fleet Sandbox and Battlemap Maker. Both camera views keep the map centered beside the sidebar, with placement aligned to the pointer.
+- Fleet importer instructions now explicitly ask for a fleet built and text-exported from Star Forge or Ryan Kingston's Fleet Builder.
+
+### Verification and remaining reports
+
+- Gameplay regressions cover card effects, command ownership, AI continuation, casualties, displacement and ignition. Presentation checks cover spatial inspection, choice hover, Android touch and placement. Both editors passed rendered layout, sidebar input and placement checks in perspective and overhead views.
+- The local Unity project includes repeatable issue drills and recorded mine/inspection reproductions for further playtesting. These editor tools are not a new player-build menu.
+- Broader AI-stall and whole-fleet control-swap reports, and the original macOS station-freeze report, are not conclusively resolved. Targeted fixes and passing scripted runs do not establish every intermittent report as fixed. Independence remains selectable before movement plotting or after cancelling an uncommitted plot.
+- Windows x64, Linux x86-64, macOS Universal and Android ARM64 release builds passed. Android version code is 10.
+- Windows native startup and Linux startup under WSL passed. Packaged versions, starting clock, scenes, renderer resources and architectures were checked; the Android signature was verified. Native macOS and Android-device playtests, plus remote multiplayer verification, remain pending.
+
 ## [0.2.6](https://github.com/thetrufflegouda/SWArmada/releases/tag/v0.2.6) - 2026-09-18
 
 SWArmada 0.2.6 repairs reported rules and battle-flow problems and makes unit dossiers more complete.
